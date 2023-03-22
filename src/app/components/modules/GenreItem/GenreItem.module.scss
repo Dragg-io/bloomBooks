@@ -1,0 +1,69 @@
+@import '../../../styles/app.scss';
+
+.genreItem{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1250px;
+  @include breakpoint(sm){
+    flex-direction: unset;
+  }
+  .leftSide{
+    h2{
+      font-family: $text-font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-decoration-line: underline;
+      color: $a0;
+    }
+    p{
+      font-family: $text-font-stack;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: $c7;
+    }
+    @include breakpoint(xl){
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+  }
+  .rightSide{
+    p{
+      font-family: $text-font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    @include breakpoint(lg){
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+    }
+  }
+
+  &.boxLayout{
+    width: 195px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    @include breakpoint(sm){
+      min-height: 120px;
+    }
+    .leftSide{
+      flex-direction: column;
+      gap: 4px;
+    }
+    .rightSide{
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+}

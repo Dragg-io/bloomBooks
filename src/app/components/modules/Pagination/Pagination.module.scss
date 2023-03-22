@@ -1,0 +1,31 @@
+@import '../../../styles/app.scss';
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 17px;
+  gap: 7px;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  button{
+    cursor: pointer;
+    width: 31px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid $a2;
+    border-radius: 12px;
+    font-family: $function-font-stack;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    &.isActive{
+      background-color: $a2;
+      color: #FFFFFF;
+    }
+  }
+}

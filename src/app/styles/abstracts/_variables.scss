@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Roboto', sans-serif;
+$function-font-stack: 'Lato', sans-serif;
+
+/// blue colors
+/// @type Color
+$a0: #5062F0 !default;
+$a1: #0B1A8E !default;
+$a2: #1F2445 !default;
+
+/// gray colors
+/// @type Color
+$c1: #E5E5E5 !default;
+$c2: #F2F3F8 !default;
+$c3: #D0D3E2 !default;
+$c4: #454A67 !default;
+$c5: #0E1337 !default;
+$c6: #010311 !default;
+$c7: #9296AC !default;
+
+$breakpoints: (
+  xs: 0,
+  xm: 365px,
+  smm:475px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1024px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);

@@ -1,0 +1,42 @@
+@import '../../../styles/app.scss';
+
+.searchBar{
+  width: 100%;
+  margin: 0px;
+  background-color: white;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+  order: 2;
+  @include breakpoint(smm){
+    width: 368px;
+    order: unset;
+    margin: 0px 30px;
+  }
+  button{
+    height: 100%;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img{
+      width: 16px;
+    }
+  }
+  input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 85%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $function-font-stack;
+    &:focus {outline:none!important;}
+  }
+}

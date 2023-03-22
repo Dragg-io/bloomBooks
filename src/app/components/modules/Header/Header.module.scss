@@ -1,0 +1,19 @@
+@import '../../../styles/app.scss';
+
+.header{
+  background-color: $a0;
+  width: 100vw;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  flex-wrap: wrap;
+  @include breakpoint(smm){
+    flex-wrap: unset;
+    height: 60px;
+  }
+  @include breakpoint(xl){
+    padding: 0px 120px;
+  }
+}

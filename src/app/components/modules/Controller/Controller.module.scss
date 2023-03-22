@@ -1,0 +1,77 @@
+@import '../../../styles/app.scss';
+
+.controller{
+  display: flex;
+  width: 100%;
+  padding: 10px 16px;
+  background-color: $c2;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  @include breakpoint(xm){
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-height: 48px;
+  }
+  @include breakpoint(sm){
+    padding: 0px 120px;
+  }
+  .listTitle{
+    h1{
+      font-family: $text-font-stack;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      @include breakpoint(sm){
+        font-size: 24px;
+      }
+    }
+  }
+  .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .listedItemsControl{
+      font-family: $function-font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      select{
+        margin: 0px 4px;
+      }
+    }
+    .showModeBtns{
+      margin-left: 11px;
+      display: flex;
+      align-items: center;
+      @include breakpoint(sm){
+        margin-left: 43px;
+      }
+      span{
+        font-size: 20px;
+        width: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 8px;
+        &:hover{
+          svg > *{
+            fill: $a0 !important;
+          }
+        }
+        &.isActive{
+          svg > *{
+            fill: $a0 !important;
+          }
+        }
+      }
+    }
+  }
+}
