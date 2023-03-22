@@ -32,8 +32,10 @@ const FavProvider = ({ children }: { children: React.ReactElement }) => {
   }
 
   React.useEffect(() => {
-    const localFavs = JSON.parse(window.localStorage.getItem('localFavs') || '');
-    setFavs([...localFavs]);
+    if (window.localStorage.getItem('localFavs') !== null) {
+      const localFavs = JSON.parse(window.localStorage.getItem('localFavs') || '');
+      setFavs([...localFavs]);
+    }
   }, []);
 
   return <FavContext.Provider value={{ favs, addFav, removeFav, showFavTab, switchShowTab }}>{children}</FavContext.Provider>;
