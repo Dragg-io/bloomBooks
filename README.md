@@ -1,5 +1,7 @@
 # Bloom front end test
 
+[Link para teste](https://bloom-books.vercel.app/genero);
+
 ## Bloom Book NYT API consume
 
 ### Descrição
@@ -17,6 +19,7 @@ Pra fazer esse projeto, escolhi as seguintes tecnologias:
 - [SCSS](https://sass-lang.com/documentation/syntax) - Toda estilização foi feita usando SCSS, para demonstrar meus conhecimentos com modularização de arquivos de estilo, mas também conheço outras opções, como o styled components;
 - [React Router Dom v6](reactrouter.com/) - Foi usado para gerênciar a navegação entre as páginas;
 - [Axios](https://axios-http.com/) - Usado para consumir a API do NYT.
+- [Vercel](https://vercel.com/) - Host com integração continua.
 
 ### How to run the application locally
 
