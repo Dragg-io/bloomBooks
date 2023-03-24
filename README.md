@@ -24,9 +24,9 @@ Pra fazer esse projeto, escolhi as seguintes tecnologias:
 ### How to run the application locally
 
 Pra rodar a aplicação localmente basta clonar o projeto para sua maquina usando o terminal:
-`git clone https://github.com/`  
+`git clone https://github.com/Dragg-io/bloomBooks.git`  
 or  
-`git@github.com:`
+`git@github.com:Dragg-io/bloomBooks.git`
 
 Acesse a pasta que foi criada:
 `cd bloombooks`
